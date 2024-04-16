@@ -1,0 +1,11 @@
+
+.Comment{
+    background-color: whitesmoke;
+    border-radius: 9px;
+    border: solid black 1px;
+    width: 100%;
+}
+
+.commentText{
+    margin-left: 1rem;
+}

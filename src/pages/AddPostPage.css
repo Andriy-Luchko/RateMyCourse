@@ -1,0 +1,53 @@
+.postInfoHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #a41e35;
+    padding: 8px;
+    color: white;
+}
+
+.postInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.AddPostPage{
+    margin-top: 6rem;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+
+.reviewInput {
+    width: 500px; /* Make the textarea take up the full width of its container */
+    height: 200px; /* Set the height to your desired value */
+    font-size: 18px;
+}
+
+.white{
+    color: whitesmoke;
+}
+
+.courseInput{
+    height: 2rem;
+    font-size: 20px;
+}
+
+
+.addPost {
+    background-color: #222222;
+    border: solid #222222 2px;
+    border-radius: 5px;
+    margin: 1rem;
+}

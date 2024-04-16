@@ -1,0 +1,57 @@
+
+.searchBarsContainer {
+    margin-top: 6rem;
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.newest {
+    background-color: #222222;
+    border: solid #222222 2px;
+    border-radius: 5px;
+}
+
+.mostPopular {
+    background-color: #222222;
+    border: solid #222222 2px;
+    border-radius: 5px;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plusIcon {
+    width: 1.4rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Basic styling for the search bar */
+.courseSearchbar {
+    position: relative;
+    display: inline-block;
+    border-color: black;
+}
+
+.courseSearchbar:focus {
+    outline: none;
+}
+
+.postsContainer{
+    margin-top: 1rem;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#root{
+    max-width: 1280px;
+}

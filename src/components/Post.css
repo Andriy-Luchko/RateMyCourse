@@ -1,0 +1,53 @@
+.Post{
+    background-color: whitesmoke;
+    border-radius: 9px;
+    border: solid black 1px;
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.postHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    border-radius: 9px 9px 0px 0px;
+    background: #a41e35;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.heartIcon{
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+.likesContainer{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review{
+    margin-left: 1rem;
+}
+
+.likesAndComments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentIcon{
+    height: 1.6rem;
+    margin-right: 1rem;
+}
