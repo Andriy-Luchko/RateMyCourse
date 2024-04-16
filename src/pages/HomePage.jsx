@@ -16,7 +16,6 @@ function HomePage() {
             if (error) {
                 console.error('Error fetching data:', error.message);
             } else {
-                console.log(data);
                 setPosts(data);
             }
         };

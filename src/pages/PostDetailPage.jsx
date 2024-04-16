@@ -45,7 +45,6 @@ function PostDetailPage() {
                 console.error('Error fetching data:', error.message);
                 console.error('For character id: ', params.id)
             } else {
-                console.log(data)
                 if (data.length > 0) {
                     setComments(data);
                 }
@@ -63,8 +62,7 @@ function PostDetailPage() {
             .insert([{ comment: newComment, post: parseInt(params.id)}])
             .select();
 
-
-        window.location = "/" + params.id;
+        setComments([...comments, {comment:newComment}])
     }
 
     const handleCommentChange = (event) => {
