@@ -16,6 +16,7 @@ function HomePage() {
             if (error) {
                 console.error('Error fetching data:', error.message);
             } else {
+                console.log(data);
                 setPosts(data);
             }
         };
@@ -65,6 +66,7 @@ function HomePage() {
                         contentrating={post.contentrating}
                         review={post.review}
                         likes={post.likes}
+                        timeCreated={post.created_at}
                     />
                 ))}
             </div>

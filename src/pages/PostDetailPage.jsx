@@ -31,6 +31,7 @@ function PostDetailPage() {
                         'contentrating': data[0].contentrating,
                         'review': data[0].review,
                         'likes': data[0].likes,
+                        'created_at': data[0].created_at,
                     })
                 }
             }
@@ -59,11 +60,12 @@ function PostDetailPage() {
         event.preventDefault();
         await supabase
             .from('Comments')
-            .insert([{ comment: newComment, post: parseInt(params.id)}])
+            .insert([{ comment: newComment, post: parseInt(params.id) }])
             .select();
 
-        setComments([...comments, {comment:newComment}])
+        setComments([...comments, { comment: newComment }])
     }
+
 
     const handleCommentChange = (event) => {
         setNewComment(event.target.value);
@@ -78,6 +80,8 @@ function PostDetailPage() {
                 contentrating={post.contentrating}
                 review={post.review}
                 likes={post.likes}
+                timeCreated={post.created_at}
+                notHomepage={true}
             />
             <div className="commentSection">
                 {comments.map(comment => (
